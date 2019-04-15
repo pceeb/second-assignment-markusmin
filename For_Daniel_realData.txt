@@ -1,0 +1,100 @@
+  827  ls *
+  828  ls File *
+  829  ls *.txt
+  830  ls File?.txt
+  831  lsFile[1-2].txt
+  832  ls File[!3].*
+  833  ls File[1-2].txt
+  834  wget http://www.cep.unep.org/pubs/legislation/spawannxs.txt
+  835  head -n 50 spawannxs.txt
+  836  grep Orchidaceae spawannxs.txt
+  837  grep -c Orchidaceae spawannxs.txt
+  838  grep Falco spawannxs.txt
+  839  grep -i Falco spawannxs.txt
+  840  grep -i ara spawannxs.txt
+  841  grep -i -w ara spawannxs.txt
+  842  grep -i -w -A 1 ara spawannxs.txt
+  843  grep -i -n -w -A 1 ara spawannxs.txt
+  844  grep -i -w -v ara spawannxs.txt
+  845  history | tail -n 50 > For_Daniel_grep.txt
+  846  cat For_Daniel_grep.txt 
+  847  mkdir TestFind
+  848  cd TestFind
+  849  mkdir -p Dir1/Dir11/Dir111
+  850  mkdir Dir2
+  851  mkdir Dir3
+  852  touch Dir1/File1.txt
+  853  touch Dir1/File1.csv
+  854  touch Dir1/File1.tex
+  855  touch Dir2/File2.txt
+  856  touch Dir2/File2.csv
+  857  touch Dir2/File2.tex
+  858  touch Dir1/Dir11/Dir111/File111.txt
+  859  touch Dir3/File3.txt
+  860  find . -name "File1.txt" 
+  861  find . -name "*.txt"
+  862  find . -maxdepth 2 -name "*.txt"
+  863  find . -maxdepth 2 -not -name "*.txt"  
+  864  find . -type d
+  865  find . -type f -exec ls -s {} \; | sort -n | head -10 
+  866  history | tail -n 30 > For_Daniel_find.txt
+  867  cd ../../
+  868  cd ../
+  869  cd Data/fasta
+  870  ls
+  871  head -n3 407228326.fasta
+  872  wc -l *.fasta
+  873  tail -n+2 407228326.fasta
+  874  tail -n+2 407228326.fasta | tr -d "\n"
+  875  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
+  876  tail -n+2 407228412.fasta | tr -d "\n" | wc -c
+  877  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+  878  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+  879  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+  880  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+  881  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+  882  cd ../
+  883  man head
+  884  head -n 13900 | head -n -264 | > darwin.txt
+  885  ls
+  886  pwd
+  887  cd ../
+  888  ls
+  889  cd Data
+  890  ls
+  891  head -n 13900 otoos10.txt| head -n -264 otoos10.txt| > darwin.txt
+  892  nano otoos10.txt 
+  893  grep -i evolution otoos10.txt
+  894  grep -w -i evolution otoos10.txt
+  895  ls
+  896  grep -w -i evolved otoos10.txt
+  897  man grep
+  898  grep -w -i -c evolution otoos10.txt
+  899  grep -i -c evolution otoos10.txt
+  900  grep -i -c evolved otoos10.txt
+  901  nano otoos.txt
+  902  head otoos10.txt
+  903  grep -i -c natural*selection otoos10.txt
+  904  grep -i -c natural
+  905  grep -i -c natural otoos10.txt
+  906  grep -i -c "natural selection" otoos10.txt
+  907  grep -i -c "Wallace"
+  908  grep -i -c "Wallace" otoos10.txt
+  909  cd Temperatures/
+  910  ls
+  911  grep *0101 180*.csv
+  912  grep *0101 180*.csv > jan01.max.temps
+  913  ls
+  914  nano jan01.max.temps 
+  915  cat jan01.max.temps 
+  916  man grep
+  917  grep -c *0101 180*.csv
+  918  grep -c *0101
+  919  grep -c *0101 .
+  920  grep -c *0101 180*.csv
+  921  nano 1800.csv
+  922  grep 0101 180*.csv
+  923  grep 0101, 180*.csv
+  924  grep "0101,T" 180*.csv
+  925  grep "0101,TMAX" 180*.csv
+  926  history | tail -n 100 > For_Daniel_realData.txt

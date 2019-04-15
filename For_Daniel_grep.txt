@@ -1,0 +1,50 @@
+  796  ls
+  797  touch TestFile
+  798  mv TestFile TestFile2
+  799  rm TestFile2
+  800  mkdir TestDirectory
+  801  touch TestDirectory/Test.txt
+  802  rmdir TestDirectory
+  803  rm TestDirectory/Test.txt
+  804  rmdir TestDirectory
+  805  echo "My first line." > test.txt
+  806  cat test.txt
+  807  echo "My second line" >> test.txt
+  808  ls / >> ListRootDir.txt
+  809  cat ListRootDir.txt 
+  810  mkdir TestWild
+  811  cd TestWild/
+  812  touch File1.txt
+  813  touch File2.txt
+  814  touch File3.txt
+  815  touch File4.txt
+  816  touch File1.csv
+  817  touch File2.csv
+  818  touch File3.csv
+  819  touch File4.csv
+  820  touch Anotherfile.csv
+  821  touch Anotherfile.txt
+  822  ls
+  823  ls | wc -l
+  824  history | tail -n 50 > For_Daniel_Wildcard.txt
+  825  ls
+  826  cat For_Daniel_Wildcard.txt 
+  827  ls *
+  828  ls File *
+  829  ls *.txt
+  830  ls File?.txt
+  831  lsFile[1-2].txt
+  832  ls File[!3].*
+  833  ls File[1-2].txt
+  834  wget http://www.cep.unep.org/pubs/legislation/spawannxs.txt
+  835  head -n 50 spawannxs.txt
+  836  grep Orchidaceae spawannxs.txt
+  837  grep -c Orchidaceae spawannxs.txt
+  838  grep Falco spawannxs.txt
+  839  grep -i Falco spawannxs.txt
+  840  grep -i ara spawannxs.txt
+  841  grep -i -w ara spawannxs.txt
+  842  grep -i -w -A 1 ara spawannxs.txt
+  843  grep -i -n -w -A 1 ara spawannxs.txt
+  844  grep -i -w -v ara spawannxs.txt
+  845  history | tail -n 50 > For_Daniel_grep.txt

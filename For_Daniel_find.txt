@@ -1,0 +1,30 @@
+  837  grep -c Orchidaceae spawannxs.txt
+  838  grep Falco spawannxs.txt
+  839  grep -i Falco spawannxs.txt
+  840  grep -i ara spawannxs.txt
+  841  grep -i -w ara spawannxs.txt
+  842  grep -i -w -A 1 ara spawannxs.txt
+  843  grep -i -n -w -A 1 ara spawannxs.txt
+  844  grep -i -w -v ara spawannxs.txt
+  845  history | tail -n 50 > For_Daniel_grep.txt
+  846  cat For_Daniel_grep.txt 
+  847  mkdir TestFind
+  848  cd TestFind
+  849  mkdir -p Dir1/Dir11/Dir111
+  850  mkdir Dir2
+  851  mkdir Dir3
+  852  touch Dir1/File1.txt
+  853  touch Dir1/File1.csv
+  854  touch Dir1/File1.tex
+  855  touch Dir2/File2.txt
+  856  touch Dir2/File2.csv
+  857  touch Dir2/File2.tex
+  858  touch Dir1/Dir11/Dir111/File111.txt
+  859  touch Dir3/File3.txt
+  860  find . -name "File1.txt" 
+  861  find . -name "*.txt"
+  862  find . -maxdepth 2 -name "*.txt"
+  863  find . -maxdepth 2 -not -name "*.txt"  
+  864  find . -type d
+  865  find . -type f -exec ls -s {} \; | sort -n | head -10 
+  866  history | tail -n 30 > For_Daniel_find.txt
